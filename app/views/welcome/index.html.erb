@@ -1,0 +1,57 @@
+<% @title="Versatile Contracting Group | Home" %>
+<section id="showcase">
+  <div class="container-showcase">
+    <h1>Versatile Contracting Group</h1>
+    <p>Atlanta based landscaping and hardscaping</p>
+  </div>
+</section>
+<section id="boxes">
+  <div class="container-boxes">
+    <div class="box">
+      <%= image_tag("bricks.png", :alt => "stones pic") %>
+      <h2>Stone, Vaneer, Concrete and Paver</h2>
+      <p>We transform patios, walkways, driveways, walls, columns, subdivision monument signs, and more!</p>
+    </div>
+    <div class="box">
+      <%= image_tag("firepit_illustration.png", :alt => "stones pic") %>
+      <h2>Outdoor Firepits and Kitchens</h2>
+      <p>Take your backyard to the next level with a kitchen or firepit.</p>
+    </div>
+    <div class="box">
+      <%= image_tag("pipe.png", :alt => "stones pic") %>
+      <h2>Grading and Drainage Services</h2>
+      <p>We take care of all grading and drainage work, while making your space look incredible.</p>
+    </div>
+  </div>
+  <!-- Add picture slideshow -->
+</section>
+<div class="clear"></div>
+<div class="gallery-link">
+  <div id="gallery-description">
+    <h2>Check out more pictures of our past projects</h2>
+  </div>
+  <div id="gallery-button">
+    <%= button_to "Gallery", galleries_path, method: :get, :class => "gallery-button" %>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="wrap" scroll="no">
+  <div id="arrow-left" class="fa fa-angle-left arrow"></div>
+  <div id="slider">
+    <div class="slide slide1">
+      <div class="slide-content">
+      </div>
+    </div>
+    <div class="slide slide2">
+      <div class="slide-content">
+        <span></span>
+      </div>
+    </div>
+    <div class="slide slide3">
+      <div class="slide-content">
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <div id="arrow-right" class="fa fa-angle-right arrow"></div>
+</div>

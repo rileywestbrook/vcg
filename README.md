@@ -1,25 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+VCG is a ruby app built for a small landscaping company. Up front build is simple enough,
 
-Things you may want to cover:
+with no database work necessary; however, I am building a Rails app to allow for easy
 
-* Ruby version
+growth in the future, in case the company decides to add e-commerce, mailing lists, etc.
 
-* System dependencies
+I want the scaling to be as seamless as possible, even thought the website will likely be static
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+for the time being.
 
 * ...
 # vcg
