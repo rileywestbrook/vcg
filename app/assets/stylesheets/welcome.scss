@@ -19,6 +19,7 @@
   width: 100%;
   height: 700px;
   background:url('waterwall.jpg') no-repeat;
+  background-position: center top;
   background-size: 100%;
   text-align: center;
   color: white;
@@ -26,13 +27,13 @@
 }
 
 #showcase .container-showcase h1 {
-  padding-top: 150px;
+  padding-top: 200px;
   font-size: 60px;
 }
 
 #showcase .container-showcase p {
   font-size: 30px;
-  margin-top: -40px;
+  margin-top: 20px;
   width: 80%;
   display: inline-block;
 }
@@ -49,7 +50,7 @@
 #boxes .box p {
   width: 80%;
   display: inline-block;
-  margin-top: -10px;
+  margin-top: 20px;
 }
 
 #boxes .box {
@@ -183,7 +184,7 @@
   #boxes .box p {
     width: 60%;
     display: block;
-    margin: 0 auto;
+    margin: 10px auto 0px auto;
   }
 
   #showcase {
@@ -191,12 +192,11 @@
   }
 
   #showcase .container-showcase h1 {
+    font-size: 32px;
     padding-top: 150px;
-    font-size: 35px;
   }
   #showcase .container-showcase p {
     font-size: 24px;
-    margin-top: -40px;
     width: 80%;
     display: inline-block;
   }
@@ -215,10 +215,6 @@
 
   .gallery-link #gallery-button .gallery-button {
     width: 100px;
-  }
-
-  header {
-    height: 80px;
   }
 }
 
