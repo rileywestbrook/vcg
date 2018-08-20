@@ -3,27 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* Showcase */
-#slider,
-.wrap,
-.slide-content {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  width: 100%;
-  height: 700px;
-  overflow-x: hidden;
-}
 
 #showcase {
   position: relative;
   width: 100%;
-  height: 700px;
+  height: 76vh;
   background:url('waterwall.jpg') no-repeat;
   background-position: center top;
   background-size: 100%;
   text-align: center;
   color: white;
-  margin-top: -50px;
 }
 
 #showcase .container-showcase h1 {
@@ -40,11 +29,15 @@
 
 /*Illustrations*/
 
+.container-boxes {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 110px;
+}
+
 #boxes {
-  margin-top: 5%;
-  margin-bottom: 40px;
   height: 350px;
-  margin-left: 5%;
 }
 
 #boxes .box p {
@@ -54,9 +47,7 @@
 }
 
 #boxes .box {
-  float: left;
   text-align: center;
-  width: 30%;
   padding: 10px;
 }
 
@@ -67,25 +58,27 @@
 /*Slideshow Link*/
 
 .gallery-link {
-  height: 75px;
+  height: 90px;
   background:#5b749b;
   overflow: hidden;
   float: left;
   width: 100%;
 }
 
+.gallery-link .row {
+  margin: 0 auto;
+}
+
 .gallery-link #gallery-description h2 {
   float: left;
-  margin-left: 8%;
-  padding-top: 5px;
+  padding-top: 10px;
   font-weight: 200;
   color: white;
 }
 
 .gallery-link #gallery-button {
   float: right;
-  padding-top: 20px;
-  margin-right: 10%;
+  padding-top: 25px;
 }
 
 .gallery-link #gallery-button .gallery-button {
@@ -102,6 +95,15 @@
 }
 
 /*Slideshow*/
+
+#slider,
+.wrap,
+.slide-content {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  margin: 0 auto;
+}
 
 .wrap {
   position: relative;
@@ -164,6 +166,8 @@
   font-size: 100px;
 }
 
+// Mobile devices
+
 @media only screen and (max-width: 750px) {
   #boxes {
     margin-bottom: 40px;
@@ -194,6 +198,7 @@
   #showcase .container-showcase h1 {
     font-size: 32px;
     padding-top: 150px;
+    margin-top: 40px;
   }
   #showcase .container-showcase p {
     font-size: 24px;
@@ -201,16 +206,8 @@
     display: inline-block;
   }
 
-  .gallery-link {
-
-  }
-
   .gallery-link #gallery-description h2 {
     font-size: 20px;
-  }
-
-  .gallery-link #gallery-button {
-
   }
 
   .gallery-link #gallery-button .gallery-button {

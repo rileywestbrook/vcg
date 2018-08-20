@@ -6,7 +6,7 @@
   </div>
 </section>
 <section id="boxes">
-  <div class="container-boxes">
+  <div class="container-boxes row">
     <div class="box">
       <%= image_tag("bricks.png", :alt => "stones pic") %>
       <h2>Stone, Vaneer, Concrete and Paver</h2>
@@ -27,15 +27,17 @@
 </section>
 <div class="clear"></div>
 <div class="gallery-link">
-  <div id="gallery-description">
-    <h2>Check out more pictures of our past projects</h2>
+  <div class="row">
+    <div id="gallery-description">
+      <h2>Check out more pictures of our past projects:</h2>
+    </div>
+    <div id="gallery-button">
+      <%= button_to "Gallery", galleries_path, method: :get, :class => "gallery-button" %>
+    </div>
+    <div class="clear"></div>
   </div>
-  <div id="gallery-button">
-    <%= button_to "Gallery", galleries_path, method: :get, :class => "gallery-button" %>
-  </div>
-  <div class="clear"></div>
 </div>
-<div class="wrap" scroll="no">
+<section class="wrap row" scroll="no">
   <div id="arrow-left" class="fa fa-angle-left arrow"></div>
   <div id="slider">
     <div class="slide slide1">
@@ -54,4 +56,4 @@
     </div>
   </div>
   <div id="arrow-right" class="fa fa-angle-right arrow"></div>
-</div>
+</section>
